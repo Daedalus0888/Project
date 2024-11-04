@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
+    <!-- You must link the style.css to this page to work -->
     <title>Responsive Navbar</title>
+    <!-- Title of the tab -->
 </head>
 <body>
-    <div class="background"></div>
     <nav class="navbar">
-        <!-- Oops! This is our top menu, but it’s broken. We need to fix it! -->
-        <div class="logo">Logo</div> <!-- This is the logo part. It’s fine! -->
+        <div class="logo">Logo</div>
         <div class="menu-icon" id="menu-icon">
-            <div class="bar"></div> <!-- This is one of the lines for the menu icon -->
-            <div class="bar"></div> <!-- This is the second line for the menu icon -->
-            <div class="bar"></div> <!-- This is the third line for the menu icon -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <!-- This is for the menu for now get used to html and css and we can go voer that again later -->
         </div>
-        <!-- Uh-oh! These are our menu links, but they need some help! -->
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li> <!-- This link says 'Home' -->
-            <li><a href="#about">About</a></li> <!-- This link says 'About' -->
-            <li><a href="#services">Services</a></li> <!-- This link says 'Services' -->
-            <li><a href="#contact">Contact</a></li> <!-- This link says 'Contact' -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href=
+                
+                <!-- "#contact" -->
+                >Contact</a></li>
+                <!-- Fix the link tag,use the other's as example -->
         </ul>
-        <!-- Important: The order of things is mixed up, and that makes it look funny! -->
     </nav>
 
     <script>
-        // This is the magic part that makes the menu open and close when we click!
-        const menuIcon = document.getElementById('menu-icon'); // We find our menu icon
-        const navLinks = document.getElementById('nav-links'); // We find our links
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
 
-        // When we click the menu icon, we want to show or hide the links
         menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('open'); // This makes the links appear or disappear
+            navLinks.classList.toggle('open');
         });
     </script>
 </body>
